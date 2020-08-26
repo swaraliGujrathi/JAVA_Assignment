@@ -1,0 +1,37 @@
+
+public class Square extends Shape implements Calculatable {
+    private int x;
+    
+    public Square() {
+    	super("Square");
+		// TODO Auto-generated constructor stub
+    	this.x = 10;
+	}
+    
+    public Square(int x){
+    	super("Square");
+    	this.x = x;
+    }
+    
+    
+	public int getX() {
+		return x;
+	}
+
+	public void setX(int x) {
+		this.x = x;
+	}
+
+	@Override
+	public double calculateArea() {
+		// TODO Auto-generated method stub
+		return (x*x);
+	}
+
+	@Override
+	public double perimeter() {
+		// TODO Auto-generated method stub
+		return (4*x);
+	}
+
+}
