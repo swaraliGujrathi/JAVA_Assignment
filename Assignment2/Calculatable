@@ -1,0 +1,5 @@
+public interface Calculatable {
+	public static final int value  = 50;
+	abstract double calculateArea();
+	abstract double perimeter();
+}
